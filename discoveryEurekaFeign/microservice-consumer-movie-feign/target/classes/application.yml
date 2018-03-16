@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: microservice-consumer-movie-feign
+  cloud:
+    zookeeper:
+      connect-string: 47.96.135.54:2181
+      #不向zookeeper注册
+      discovery:
+        register: false
+server:
+  port: 7901
+

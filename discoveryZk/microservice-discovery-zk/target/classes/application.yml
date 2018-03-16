@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    zookeeper:
+      connect-string: 47.96.135.54:2181
+      discovery:
+        enabled: false

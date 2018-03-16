@@ -1,0 +1,5 @@
+com\junmeng\cloud\provider\MicroserviceSimpleProviderUserApplication.class
+com\junmeng\cloud\provider\service\OperationService.class
+com\junmeng\cloud\provider\repository\UserRepository.class
+com\junmeng\cloud\provider\entity\User.class
+com\junmeng\cloud\provider\resource\IOperationResource.class

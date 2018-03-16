@@ -1,0 +1,30 @@
+server:
+  port: 7966
+
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+  application:
+    name: microservice-provider-user
+  cloud:
+    zookeeper:
+      connect-string: 47.96.135.54:2181
+      discovery:
+        instance-host: 127.0.0.1
+        instance-port: ${server.port}
+
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.itmuch: DEBUG
+
